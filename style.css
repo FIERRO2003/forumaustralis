@@ -1,11 +1,88 @@
 body {
 	color: white;
 	background: black;
-  text-align: center
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: 'Georgia', serif;
+}
+
+ul {
+	list-style-type: none; /* Removes bullets from the list */
+	padding: 0;            /* Optional: removes default padding */
+	margin: 0;             /* Optional: removes default margin */
+}
+
+ul li a {
+	color: #87CEFA; /* Color celeste claro */
+	text-decoration: none; /* Opcional: para quitar el subrayado */
+}
+
+ul li a:hover {
+	color: #00BFFF; /* Color celeste más oscuro cuando se pasa el ratón */
+}
+
+	.container {
+		display: flex;
+		margin-top: 40px;
+}
+	
+	.left-image {
+		width: 30%;
+		margin-right: 90px;
+		margin-left: 50px;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		margin-top: 50px;
+
+	  h2 {
+		margin-bottom: 10px;
+	  }
+	
+	  .button-row {
+		display: flex;
+		justify-content: center; /* Center buttons horizontally */
+		margin: 10px 0; /* Space between rows */
+	}
+
+	  .button {
+		display: inline-block;
+		padding: 12px 24px;
+		margin: 10px 5px;
+		background-color: #053692; /* Green background */
+		color: rgb(255, 255, 255); /* White text */
+		text-align: center;
+		text-decoration: none;
+		border-radius: 8px; /* Rounded corners */
+		border: 2px solid #070f8a; /* Green border */
+		transition: all 0.3s ease; /* Smooth transition */
+		font-family: 'Arial', sans-serif; /* Font style */
+		font-size: 16px; /* Font size */
+		font-weight: bold; /* Bold text */
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+	}
+	
+	.button:hover {
+		background-color: white; /* White background on hover */
+		color: #0400ff; /* Green text on hover */
+		border: 2px solid #00b7ff; /* Retain the green border */
+		box-shadow: 4px 4px 10px rgba(0, 204, 255, 0.527); /* More pronounced shadow on hover */
+		transform: scale(1.05); /* Slightly increase size on hover */
+	}
+	
 }
 
 h1 {
 	color: red;
 	text-align: center
 }
+
+
 
